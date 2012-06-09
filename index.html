@@ -35,12 +35,13 @@
 		<li>YouTubeなどを活用したWEBサイト作成</li>
 		<li>電子工作と組合わせたプログラミング</li>
 	</ul>
-	<h2>Schedule</h2>
+	<h2>Schedules</h2>
 	<ul class="events">
 		<!--{event in ajax.events}-->
 		<li><a href="https://www.facebook.com/events/#{event.eid}/"><img src="#{event.pic_small}" alt="" width="50" height="50" /><span class="date">#{event.date}(#{event.day})</span> #{event.name}<span class="description">#{event.description|truncate:70}</span></a></li>
 		<!--{end}-->
 	</ul>
+	<p class="detail-link"><a href="https://www.facebook.com/coderdojo.tokyo/events">&raquo; Schedules</a></p>
 	<h2>Organizer &amp; Mentors</h2>
 	<ul class="mentors masonry" data-column-width="230" data-item-selector="li">
 		<!--{mentor in ajax.mentors}-->
