@@ -1,4 +1,4 @@
-$(function(){
+YinYang.onvarset('ajax.mentors', function(){
 	$items = $('.masonry');
 	
 	$items.imagesLoaded(function(){
