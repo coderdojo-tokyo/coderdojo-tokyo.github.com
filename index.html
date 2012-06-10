@@ -12,10 +12,6 @@
 	<meta property="og:site_name" content="CoderDojo Tokyo"/>
 	<meta property="og:image" content="http://coderdojo-tokyo.github.com/style/images/dojo.png" />
 	
-	<meta name="ajax.mentors" content="mentors.json" />
-	<meta name="ajax.events" content="events.json" />
-	<meta name="yinyang:selfload" content="true" />
-	
 	<link rel="template" href="style/template.html" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="http://masonry.desandro.com/jquery.masonry.min.js"></script>
@@ -35,23 +31,7 @@
 		<li>YouTubeなどを活用したWEBサイト作成</li>
 		<li>電子工作と組合わせたプログラミング</li>
 	</ul>
-	<h2>Schedules</h2>
-	<ul class="events">
-		<!--{event in ajax.events}-->
-		<li><a href="https://www.facebook.com/events/#{event.eid}/"><img src="#{event.pic_small}" alt="" width="50" height="50" /><span class="date">#{event.date}(#{event.day})</span> #{event.name}<span class="description">#{event.description|truncate:70}</span></a></li>
-		<!--{end}-->
-	</ul>
-	<p class="detail-link"><a href="https://www.facebook.com/coderdojo.tokyo/events">&raquo; Schedules</a></p>
-	<h2>Organizer &amp; Mentors</h2>
-	<ul class="mentors masonry" data-column-width="230" data-item-selector="li">
-		<!--{mentor in ajax.mentors}-->
-		<li>
-			<a href="https://www.facebook.com/#{mentor.facebook_id}"><img src="https://graph.facebook.com/#{mentor.facebook_id}/picture?type=large" /></a>
-			<a class="facebook" href="https://www.facebook.com/#{mentor.facebook_id}">#{mentor.last_name} #{mentor.first_name}</a>
-			<a class="github" href="https://github.com/#{mentor.github_id}">#{mentor.github_id}</a>
-		</li>
-		<!--{end}-->
-	</ul>
+	<hr />
 	<h2>About us</h2>
 	<ul>
 		<li><a href="https://www.facebook.com/coderdojo.tokyo">Facebook Page</a></li>

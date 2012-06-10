@@ -40,19 +40,21 @@ body>header div.center>nav>a { font-size:16px; margin:0 .5em; color:#666; font-w
 .github { background-image:url(images/button-overlay.png), url(images/octofication.png); background-repeat:repeat-x, no-repeat; background-position:left, 0 -1px }
 .facebook { background-image:url(images/button-overlay.png), url(images/facebook.png); background-repeat:repeat-x, no-repeat; background-position:left, 0 -1px; }
 
-ul.mentors { margin:0; }
-ul.mentors li { list-style:none; width:140px; padding:10px; margin:5px; background:#FFF;
+#main-content ul.mentors { margin:0; }
+#main-content ul.mentors li { list-style:none; width:140px; padding:10px; margin:5px; background:#FFF;
 	-moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	display:block;
+	float:left;
 	
 }
-ul.mentors li a { display: block; font-size:14px; color:#333; }
-ul.mentors li a img { margin:0 0 5px; width:140px; }
-ul.mentors li a.facebook { background-image:url(icons/facebook.png) }
-ul.mentors li a.github { background-image:url(icons/github.png); color:#999; }
+#main-content ul.mentors li a { display: block; font-size:14px; color:#333; }
+#main-content ul.mentors li a img { margin:0 0 5px; width:140px; }
+#main-content ul.mentors li a.facebook { background-image:url(icons/facebook.png) }
+#main-content ul.mentors li a.github { background-image:url(icons/github.png); color:#999; }
 
 
 #main-content ul.events { margin-left:0; padding:0; background:none; border:none; min-height:100px; }
@@ -87,5 +89,5 @@ body>header div.center>nav>a,
 body>footer { font-family:"Abril Fatface"; font-weight:normal; }
 #main-content p.lead { font-family:"Raleway"; }
 
-
+ul.mentors:after,
 p:after { content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0 }
