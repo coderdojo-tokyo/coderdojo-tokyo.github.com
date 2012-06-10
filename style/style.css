@@ -89,5 +89,4 @@ body>header div.center>nav>a,
 body>footer { font-family:"Abril Fatface"; font-weight:normal; }
 #main-content p.lead { font-family:"Raleway"; }
 
-ul.mentors:after,
 p:after { content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0 }
