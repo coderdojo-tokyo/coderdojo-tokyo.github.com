@@ -49,12 +49,11 @@ body>header div.center>nav>a { font-size:16px; margin:0 .5em; color:#666; font-w
 	border-radius: 5px;
 	display:block;
 	float:left;
-	
 }
-#main-content ul.mentors li a { display: block; font-size:14px; color:#333; }
+#main-content ul.mentors li a { display: block; font-size:14px; color:#333; background-repeat:no-repeat; background-position:left; }
 #main-content ul.mentors li a img { margin:0 0 5px; width:140px; }
-#main-content ul.mentors li a.facebook { background-image:url(icons/facebook.png) }
-#main-content ul.mentors li a.github { background-image:url(icons/github.png); color:#999; }
+#main-content ul.mentors li a.facebook { /* background-image:url(icons/facebook.png); padding-left:18px; */ }
+#main-content ul.mentors li a.github { background-image:url(icons/github.png); padding-left:18px; opacity:0.6; }
 
 
 #main-content ul.events { margin-left:0; padding:0; background:none; border:none; min-height:100px; }
