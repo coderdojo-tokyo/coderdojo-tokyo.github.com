@@ -1,4 +1,6 @@
 [
 	{"title":"Github", "url":"https://github.com/coderdojo-tokyo"},
-	{"title":"Facebook", "url":"https://www.facebook.com/coderdojo.tokyo"}
+	{"title":"Facebook", "url":"https://www.facebook.com/coderdojo.tokyo"},
+	{"title":"English", "url":"en.html"},
+	{"title":"日本語", "url":"index.html"}
 ]

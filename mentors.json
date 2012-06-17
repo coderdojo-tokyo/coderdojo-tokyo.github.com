@@ -1,12 +1,13 @@
 [
-	{"last_name":"石原", "first_name":"淳也", "facebook_id":"jishiha", "github_id":"champierre"},
-	{"last_name":"中込", "first_name":"大介", "facebook_id":"daisuke.nakagome", "github_id":"daisukenakagome"},
-	{"last_name":"河村", "first_name":"奨", "facebook_id":"cognitom", "github_id":"cognitom"},
-	{"last_name":"安川", "first_name":"要平", "facebook_id":"yasulab", "github_id":"yasulab"},
-	{"last_name":"吉原", "first_name":"洋平", "facebook_id":"yohei.yoshihara", "github_id":"yohei-yoshihara"},
-	{"last_name":"安藤", "first_name":"祐介", "facebook_id":"yandod", "github_id":"yandod"},
-	{"last_name":"Shiono", "first_name":"Yoshitaka", "facebook_id":"yoshitaka.shiono", "github_id":"coderdojo-tokyo"},
-	{"last_name":"阿部", "first_name":"和広", "facebook_id":"kazuhiro.abe.79", "github_id":"coderdojo-tokyo"},
-	{"last_name":"柴木", "first_name":"みずほ", "facebook_id":"mshibaki", "github_id":"coderdojo-tokyo"},
-	{"last_name":"藤崎", "first_name":"正範", "facebook_id":"fujisaki.masanori", "github_id":"coderdojo-tokyo"}
+	{"last_name":"石原", "first_name":"淳也", "last_name_en":"Ishihara", "first_name_en":"Junya", "facebook_id":"jishiha", "github_id":"champierre"},
+	{"last_name":"中込", "first_name":"大介", "last_name_en":"Nakagome", "first_name_en":"Daisuke", "facebook_id":"daisuke.nakagome", "github_id":"daisukenakagome"},
+	{"last_name":"河村", "first_name":"奨", "last_name_en":"Kawamura", "first_name_en":"Tsutomu", "facebook_id":"cognitom", "github_id":"cognitom"},
+	{"last_name":"安川", "first_name":"要平", "last_name_en":"Yasukawa", "first_name_en":"Yohei", "facebook_id":"yasulab", "github_id":"yasulab"},
+	{"last_name":"吉原", "first_name":"洋平", "last_name_en":"Yoshihara", "first_name_en":"Yohei", "facebook_id":"yohei.yoshihara", "github_id":"yohei-yoshihara"},
+	{"last_name":"安藤", "first_name":"祐介", "last_name_en":"Ando", "first_name_en":"Yusuke", "facebook_id":"yandod", "github_id":"yandod"},
+	{"last_name":"Shiono", "first_name":"Yoshitaka", "last_name_en":"Shiono", "first_name_en":"Yoshitaka", "facebook_id":"yoshitaka.shiono", "github_id":"coderdojo-tokyo"},
+	{"last_name":"阿部", "first_name":"和広", "last_name_en":"Abe", "first_name_en":"Kazuhiro", "facebook_id":"kazuhiro.abe.79", "github_id":"coderdojo-tokyo"},
+	{"last_name":"柴木", "first_name":"みずほ", "last_name_en":"Shibaki", "first_name_en":"Mizuho", "facebook_id":"mshibaki", "github_id":"coderdojo-tokyo"},
+	{"last_name":"藤崎", "first_name":"正範", "last_name_en":"Fujisaki", "first_name_en":"Masanori", "facebook_id":"fujisaki.masanori", "github_id":"coderdojo-tokyo"},
+	{"last_name":"マクラケン", "first_name":"直子", "last_name_en":"McCracken", "first_name_en":"Naoko", "facebook_id":"naokomc", "github_id":"naokomc"}
 ]
