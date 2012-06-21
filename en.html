@@ -1,67 +1,116 @@
 <!doctype html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 
-	<title>CoderDojo Tokyo</title>
+	<title>CoderDojo Tokyo - Open Source Programming Club for Kids</title>
+
 	<meta name="keywords" content="CoderDojo, Tokyo, Programming, Dojo" />
 	<meta name="description" content="CoderDojo, an opensource programming club for kids." />
 	<meta name="author" content="CoderDojo Tokyo" />
+
 	<meta name="copyright" content="&copy; 2012 - CoderDojo Tokyo" />
+
 	
+
 	<meta property="og:site_name" content="CoderDojo Tokyo"/>
 	<meta property="og:image" content="http://tokyo.coderdojo.com/style/images/dojo.png" />
 	<meta name="ajax.mentors" content="mentors.json" />
 	<meta name="ajax.events" content="events.json" />
+
 	<meta name="yinyang:selfload" content="true" />
+
 	
 	<link rel="template" href="style/template.html" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 	<script src="http://masonry.desandro.com/jquery.masonry.min.js"></script>
 	<script src="js/yinyang.js"></script>
+
 </head>
 <body>
+
 	<h1>CoderDojo Tokyo</h1>
-	<p>CoderDojo, an opensource programming club for kids</p>
+
+	<p>CoderDojo, an open source programming club for kids</p>
+
 	<!--
+
 	<ul class="buttons">
+
 		<li><a class="button github" href="https://github.com/coderdojo-tokyo">Find us on GitHub</a></li>
+
 		<li><a class="button facebook" href="https://www.facebook.com/coderdojo.tokyo">Facebook</a></li>
+
 	</ul>
+
 	-->
+
 	<p><img src="style/images/cover.jpg" /></p>
-	<p>CoderDojo Tokyo opens every Sunday at Shimokitazawa OpenSource Cafe, and teaches kids how to</p>
+
+	<p>CoderDojo Tokyo opens every Sunday at <a href="http://osscafe.net/en/">Shimokitazawa OpenSource Cafe</a>. We are teaching kids how to:</p>
 	<ul>
-		<li>do programming with Scratch</li>
+
+		<li>program with Scratch</li>
 		<li>build your own website with HTML, CSS, and JavaScript</li>
 		<li>make things with Arduino</li>
+
 	</ul>
-	<h2>Schedules</h2>
-	<p>If you would like to join in CoderDojo Tokyo, click "Join" in the following pages.</p>
+
+	<h2>Schedule</h2>
+
+	<p>To participate in CoderDojo Tokyo events, click "Join" on the following pages.</p>
+
 	<ul class="events">
+
 		<!--{event in ajax.events}-->
+
 		<li><a href="https://www.facebook.com/events/#{event.eid}/"><img src="#{event.pic_small}" alt="" width="50" height="50" /><span class="date">#{event.date}(#{event.day})</span> #{event.name}<span class="description">#{event.description|truncate:70}</span></a></li>
+
 		<!--{end}-->
+
 	</ul>
+
 	<p class="detail-link"><a href="https://www.facebook.com/coderdojo.tokyo/events">&raquo; Schedules</a></p>
-	<h2>Organizer &amp; Mentors</h2>
-	<p>Mentors in CoderDojo Tokyo are software/hardware engineers, designers, and sometimes visitors of OpenSource Cafe :-)</p>
+
+	<h2>Organizers &amp; Mentors</h2>
+
+	<p>Mentors of CoderDojo Tokyo are software/hardware engineers, designers, and educators. Some are regular vistors of OpenSource Cafe :-)</p>
+
 	<ul class="mentors masonry" data-column-width="230" data-item-selector="li">
+
 		<!--{mentor in ajax.mentors}-->
+
 		<li>
+
 			<a href="https://www.facebook.com/#{mentor.facebook_id}"><img src="https://graph.facebook.com/#{mentor.facebook_id}/picture?type=large" /></a>
+
 			<a class="facebook" href="https://www.facebook.com/#{mentor.facebook_id}">#{mentor.last_name_en} #{mentor.first_name_en}</a>
+
 			<a class="github" href="https://github.com/#{mentor.github_id}">#{mentor.github_id}</a>
+
 		</li>
+
 		<!--{end}-->
+
 	</ul>
+
 	<h2>About us</h2>
+
 	<ul>
+
 		<li><a href="https://www.facebook.com/coderdojo.tokyo">Facebook Page</a></li>
+
 		<li><a href="https://github.com/coderdojo-tokyo">GitHub Organization</a></li>
+
 		<li><a href="http://zen.coderdojo.com/dojo/57">CoderDojo.com</a></li>
+
 		<li><a href="https://groups.google.com/forum/?fromgroups#!forum/coderdojo-tokyo">Google Groups</a></li>
+
 	</ul>
-	<p>This webpage is also opensource! We are very welcome to your pull requests!</p>
+
+	<p>This webpage is also <a href="https://github.com/coderdojo-tokyo/coderdojo-tokyo.github.com">open source</a>. We welcome your pull requests!</p>
+
 </body>
 </html>
