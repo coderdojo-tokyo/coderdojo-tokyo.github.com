@@ -43,8 +43,12 @@ ________FQL;
 	
 	private static function process_event($row){
 		$youbi = array('日','月','火','水','木','金','土曜');
-		$row['date'] = date('Y/m/d', $row['start_time']);
-		$row['day'] = $youbi[date('w', $row['start_time'])-0];
+		// UNIXタイムスタンプでなければ、つまりISO-8601で渡された場合は、UNIXタイムスタンプに変換
+		$start_ts = preg_match('/^\d+$/', $row['start_time'])
+			? $row['start_time']-0
+			: strtotime($row['start_time']);
+		$row['date'] = date('Y/m/d', $start_ts);
+		$row['day'] = $youbi[date('w', $start_ts)-0];
 		$row['description'] = mb_strimwidth($row['description'], 0, 400, '...', 'UTF-8');
 		return $row;
 	}
