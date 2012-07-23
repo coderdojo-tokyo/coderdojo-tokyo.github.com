@@ -43,6 +43,7 @@ ____FQL;
 			'pic_small' => $row['pic_small'],
 			'date' => date('Y/m/d', $start_ts),
 			'day' => $youbi[date('w', $start_ts)-0],
+			'date_en' => date('D, M j', $start_ts),
 		);
 	}
 	echo json_encode($data);
