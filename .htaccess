@@ -1,5 +1,0 @@
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^events.json data.php?type=events [L]
-</IfModule>
