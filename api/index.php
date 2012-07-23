@@ -11,7 +11,7 @@ $facebook = new Facebook(array(
 ));
 
 /**
- * 過去20件のイベント情報
+ * 今後のイベント情報
  */
 $app->get('/fb/event/coming.json', function () use ($facebook) {
 	$uid = $_SERVER['HTTP_FB_PAGEID'];
