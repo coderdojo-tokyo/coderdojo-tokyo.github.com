@@ -30,14 +30,21 @@ $app->get('/fb/event/coming.json', function () use ($facebook) {
 ____FQL;
 	$result = $facebook->api(array('method'=>'fql.query','query'=>$fql));
 	$data = array();
-	foreach ($result as $row) $data[] = array(
-		'description' => mb_strimwidth($row['description'], 0, 400, '...', 'UTF-8'),
-		'eid' => $row['eid'],
-		'name' => preg_replace('/^下北沢オープンソースCafe - /', '', $row['name']),
-		'pic_small' => $row['pic_small'],
-		'date' => date('M j', $row['start_time']),
-		'day' => date('D', $row['start_time']),
-	);
+	foreach ($result as $row) {
+		$youbi = array('日','月','火','水','木','金','土');
+		// UNIXタイムスタンプでなければ、つまりISO-8601で渡された場合は、UNIXタイムスタンプに変換
+		$start_ts = preg_match('/^\d+$/', $row['start_time'])
+			? $row['start_time']-0
+			: strtotime($row['start_time']);
+		$data[] = array(
+			'description' => mb_strimwidth($row['description'], 0, 400, '...', 'UTF-8'),
+			'eid' => $row['eid'],
+			'name' => $row['name'],
+			'pic_small' => $row['pic_small'],
+			'date' => date('Y/m/d', $start_ts),
+			'day' => $youbi[date('w', $start_ts)-0],
+		);
+	}
 	echo json_encode($data);
 });
 
