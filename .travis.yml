@@ -1,3 +1,9 @@
 language: php
+
 php:
   - 5.3
+
+script: phpunit .
+
+after_success:
+  - wget -qO- http://coderdojo.jp/git_test.php > /dev/null
